@@ -5,6 +5,7 @@
     max-width: 1280px;
     min-width: 320px;
     padding-top: 28px;
+    border: 2px red solid;
      
 }
 
@@ -31,8 +32,13 @@
     text-decoration: none;
     transition: 1s ease;
     opacity: 1;
+    margin-right: 18px;
 }
-  
+
+.header__lang-link:last-child {
+  margin-right: 0;
+}
+
 .header__lang-link:hover{
     opacity: 0.3;
 }
@@ -44,7 +50,7 @@
     align-items: center;
     margin: 0 auto;
     border: 2px red solid;
-    margin: 0 148px;
+    margin: 56px 148px 0;
 }
 
 .lead__title {
@@ -86,7 +92,136 @@
     margin: 0;
     margin-top: 8px;
 }
+
+.intro__content {
+    max-width: 690px;
+    
+    border: 2px red solid;
+    margin-left: 148px;
+    margin-top: 92px;
+}
+
+.intro__title {
+    max-width: 690px;     
+    color: #FFFFFF;     
+    font-size: 54px;
+    font-weight: 900;
+    line-height: 58px;
+    font-weight: normal;         
+    margin: 0; 
+}
+.intro__text{
+    max-width: 690px;     
+    color: #FFFFFF;     
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 26px;
+              
+    margin: 0;
+    margin-top: 40px;
+    margin-bottom: 32px;
+}
+.intro__list {
+    max-width: 690px;     
+    color: #FFFFFF;     
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 18px;
+            
+    margin: 0;
+    padding: 0;
      
+    list-style: none;
+}
+
+.intro__item {
+    font-weight: normal;
+}
+
+.photo-grid{
+    margin: 92px 48px 0;
+    max-width: 1184px;
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(auto-fill, 284px);
+}
+
+.photo-grid__item{
+    width: 100%;
+     
+}
+
+.places {
+    max-width: 984px;
+    margin: 0 auto;
+    border: 2px red solid;
+}
+
+.place {
+     
+    display: grid;
+    grid-template-columns: 340px 1fr;
+    /*grid-template-areas:
+    "place__title" "place__website"
+    "place-image" "place-paragraph";*/
+    gap: 48px 40px;
+    border: 2px red solid;
+   
+}
+
+.place__image{
+    
+max-width: 460px;
+grid-area: place-image;
+}
+
+
+.place__title{
+    grid-area: place-title;
+}
+
+ 
+
+.place__website{
+    grid-area: place-website;
+}
+
+.place__url-heading{}
+
+.place__link{}
+
+.place__paragraph{
+    grid-area: place-paragraph;
+}
+
+.cover{
+    margin: 0 auto;
+    max-width: 1184px;
+    max-height: 740px;
+    border: 2px red solid;
+    position: relative;
+    overflow: hidden;
+     
+}
+.cover__background{
+    width: 100%;
+    object-fit: cover;
+    
+}
+
+.cover-title{
+    position: absolute;
+    top: 245px;
+}
+
+.cover-subtitle{
+    position: absolute;
+    top: 477px;
+}
+
+.footer{
+    display: flex;
+}
 
 @media screen and (max-width: 1279px) and (min-widht: 1024px) {
 
