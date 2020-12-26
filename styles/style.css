@@ -4,9 +4,9 @@
     width: 100%;
     max-width: 1280px;
     min-width: 320px;
-    padding-top: 28px;     
-    margin: 0 auto;   
-    border: 1px green solid;
+    padding-top: 28px;    
+    margin: 0 auto; 
+    border: solid green 1px;
 }
 
 .link:hover {
@@ -19,8 +19,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 auto;    
-    margin: 0 48px;
+    margin: 0 auto;  
+    padding: 0 48px 56px 48px;
 }
 
 .header__logo {
@@ -31,7 +31,7 @@
 .header__lang-link {
     color: #FFFFFF;   
     font-size: 24px;
-    line-height: 28px;
+    line-height: 1.2;
     font-weight: normal;
     text-decoration: none;
     transition: 1s ease;
@@ -49,11 +49,12 @@
 
 .lead {
     max-width: 984px;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 auto;    
-    margin: 56px 148px 0;
+    padding-bottom: 92px;
 }
 
 .lead__title {     
@@ -61,9 +62,9 @@
     color: #FFFFFF;   
     font-size: 96px;
     font-weight: 900;
-    line-height: 100px;     
+    line-height: 1.04;     
     text-align: center;   
-    margin: 0;
+    margin: 0;     
 }
 
 .lead__subtitle {
@@ -71,16 +72,14 @@
     color: #FFFFFF;    
     font-size: 30px;
     font-weight: normal;
-    line-height: 36px;    
+    line-height: 1.2;    
     text-align: center;
     margin: 0;
     margin-top: 32px;
     margin-bottom: 64px;
 }
 
-.lead__image {
-    object-fit: cover;
-    height: 100%;
+.lead__image {     
     width: 100%;
 }
 
@@ -89,17 +88,20 @@
     color: #FFFFFF;   
     font-size: 10px;
     font-weight: normal;
-    line-height: 14px;   
+    line-height: 1.4;   
     align-self: start;
     text-transform: uppercase;
     margin: 0;
     margin-top: 8px;
 }
 
-.intro__content {
-    max-width: 690px;  
-    margin-left: 148px;
-    margin-top: 92px;
+.intro__container {
+    display: flex;
+    flex-direction: column;
+    max-width: 690px;
+    margin: 0;
+    padding-left: 148px;   
+    padding-bottom: 92px;
 }
 
 .intro__title {
@@ -107,7 +109,7 @@
     color: #FFFFFF;   
     font-size: 54px;
     font-weight: 900;
-    line-height: 58px;     
+    line-height: 1.07;     
     margin: 0;
 }
 
@@ -116,7 +118,7 @@
     color: #FFFFFF;
     font-size: 16px;
     font-weight: normal;
-    line-height: 26px;              
+    line-height: 1.6;              
     margin: 0;
     margin-top: 40px;
     margin-bottom: 32px;
@@ -127,7 +129,7 @@
     color: #FFFFFF;    
     font-size: 12px;
     font-weight: bold;
-    line-height: 18px;            
+    line-height: 1.5;            
     margin: 0;
     padding: 0;     
     list-style: none;
@@ -138,7 +140,8 @@
 }
 
 .photo-grid {
-    margin: 92px 48px 0;
+    padding-bottom: 92px;
+    margin: 0 auto;
     max-width: 1184px;
     display: grid;
     gap: 16px;
@@ -153,7 +156,7 @@
 .places {
     max-width: 984px;
     margin: 0 auto;
-    margin-top: 92px;    
+    padding-bottom: 92px;    
 }
 
 .place {    
@@ -179,7 +182,7 @@
     color: #FFFFFF;  
     font-size: 72px;
     font-weight: 900;
-    line-height: 76px;
+    line-height: 1.06;
     margin: 0;
 }
      
@@ -192,7 +195,7 @@
     color: #AAAAAA;     
     font-size: 12px;
     font-weight: normal;
-    line-height: 12px; 
+    line-height: 1; 
 }
 
 .place__link {
@@ -200,7 +203,7 @@
     color: #FFFFFF;  
     font-size: 18px;
     font-weight: normal;
-    line-height: 22px;
+    line-height: 1.2;
     margin: 0;
 }
 
@@ -213,29 +216,28 @@
     color: #FFFFFF;  
     font-size: 18px;
     font-weight: normal;
-    line-height: 30px;
+    line-height: 1.7;
     margin: 0;    
 }  
 
 .cover {
-    margin: 0 auto;
-    margin-top: 92px;
+    margin: 0 auto;     
     max-width: 1184px;
     max-height: 740px;     
-    position: relative;
-} 
-
-.cover__background {
-    width: 100%;    
-    opacity: 0.7;  
+    position: relative;    
 }
 
-.cover__background:hover {    
-    background-color: #2A2C2F;
-    opacity: 0.3;
-    transition: 0.3s ease;
-}
+.cover__overlay {   
+    background-image: url(../images/cover-trains.jpg);    
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
 
+}  
 
 .cover__title {
     position: absolute;
@@ -246,7 +248,7 @@
     color: #FFFDFD;  
     font-size: 72px;
     font-weight: 900;
-    line-height: 76px;
+    line-height: 1.06;
     margin: 0;
 }     
 
@@ -259,7 +261,7 @@
     color: #FFFFFF;  
     font-size: 18px;
     font-weight: normal;
-    line-height: 22px;
+    line-height: 1.2;
     margin: 0;
 }     
 
@@ -268,8 +270,8 @@
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    margin-top: 92px;
-    margin-bottom: 24px;
+    padding-top: 92px;
+    padding-bottom: 24px;
     align-items: baseline;
 }
 
@@ -285,7 +287,7 @@
     color: #FFFFFF;  
     font-size: 16px;
     font-weight: normal;
-    line-height: 18px;     
+    line-height: 1.1;     
     margin-right: 18px;
     text-decoration: none;
 }
@@ -295,29 +297,48 @@
     color: #FFFFFF;  
     font-size: 14px;
     font-weight: normal;
-    line-height: 16px;
+    line-height: 1.1;
     margin: 0;     
 }
  
-@media (max-widht: 1024px) {
+@media (max-widht: 1279px) {
     .header {
         max-width: 928px;
     }
      
 }
 
-@media (max-widht: 768px) {
+@media (max-widht: 1024px) {
     .header {
-        max-width: 720px;
+        max-width: 928px;
     }
+    .lead { 
+         
+    } 
+    
+}
+
+@media (max-widht: 767px) {
+    .header {
+        max-width: 380px;
+    }
+    .lead-title {
+        max-width: 720px;
+        font-size: 40px;
+    }
+     
 }
 
 @media (max-widht: 425px) {
-    
+    .header {
+        max-width: 340px;
+    }
+}
 }
 
-@media (max-widht: 375px) {
-    
-}
-
-    
+@media (max-widht: 312px) {
+    .header {
+        max-width: 288px;
+        
+    }
+}   
