@@ -5,7 +5,7 @@
     justify-content: center;
     margin: 0 auto;
     max-width: 1184px;
-    min-height: 740px;     
+    min-height: 740px;
     background-image: url(../../../images/cover-trains.jpg);
     background-position: center;
     background-size: cover;
@@ -31,7 +31,7 @@
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
     .cover {
         max-width: 1024px;
-        min-height: 640px;   
+        min-height: 640px;
     }
 }
 
