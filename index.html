@@ -3,18 +3,20 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">     
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./pages/index.css">
     <title>Путешествие</title>
 </head>
 
 <body class="page">
-    <header class="header page__header">
+    <header class="header">
         <img src="./images/header-logo.svg" alt="Россия" class="header__logo">
-        <nav class="header__lang-links">
-            <a href="#" target="_blank" rel="noopener" class="header__lang-link link">Ru</a>
-            <a href="#" target="_blank" rel="noopener" class="header__lang-link link">En</a>
-        </nav>
+        <ul class="header__lang-links">
+            <li class="header__lang-point"><a href="#" target="_blank" rel="noopener"
+                    class="header__lang-link header__lang-link_active">Ru</a></li>
+            <li class="header__lang-point"><a href="#" target="_blank" rel="noopener"
+                    class="header__lang-link link">En</a></li>
+        </ul>
     </header>
     <section class="lead ">
         <h1 class="lead__title">Путешествия по России</h1>
@@ -23,22 +25,22 @@
         <p class="lead__caption">ваша полка — верхняя</p>
     </section>
 
-    <section class="intro">       
-            <h2 class="intro__title">Чего мы там не видели?</h2>
-            <p class="intro__text">По опросам ВЦИОМ, 95% россиян мечтают куда-нибудь поехать, но только 36% планируют
-                провести отпуск в родной стране. Мол, чего мы тут, дома, не видели? На самом деле, Россия — это целая
-                вселенная с ласковым морем юга, густыми лесами Саян и суровыми льдами плато Путорана. А ещё увидеть все
-                эти красоты можно без миллионов на счету, загранпаспорта и многочасовых перелетов. Как, например, Вера
-                Башмакова — смелая молодая мама, которая взяла в охапку троих детей, усадила их в свою «Ладу» и проехала
-                20 тысяч километров по родной стране. Мы выбрали и описали некоторые интересные места, достойные вашего
-                отпуска.</p>
-            <ul class="intro__list">
-                <li>Часовых поясов<span class="intro__span-accent"> 11</span></li>
-                <li>Объектов природного наследия ЮНЕСКО<span class="intro__span-accent"> 12</span></li>
-                <li>Объектов культурного наследия ЮНЕСКО<span class="intro__span-accent"> 16</span></li>
-                <li>Природных заповедников<span class="intro__span-accent"> 105</span></li>
-                <li>Аэропортов<span class="intro__span-accent"> 241</span></li>
-            </ul>      
+    <section class="intro">
+        <h2 class="intro__title">Чего мы там не видели?</h2>
+        <p class="intro__text">По опросам ВЦИОМ, 95% россиян мечтают куда-нибудь поехать, но только 36% планируют
+            провести отпуск в родной стране. Мол, чего мы тут, дома, не видели? На самом деле, Россия — это целая
+            вселенная с ласковым морем юга, густыми лесами Саян и суровыми льдами плато Путорана. А ещё увидеть все
+            эти красоты можно без миллионов на счету, загранпаспорта и многочасовых перелетов. Как, например, Вера
+            Башмакова — смелая молодая мама, которая взяла в охапку троих детей, усадила их в свою «Ладу» и проехала
+            20 тысяч километров по родной стране. Мы выбрали и описали некоторые интересные места, достойные вашего
+            отпуска.</p>
+        <ul class="intro__list">
+            <li>Часовых поясов<span class="intro__span-accent"> 11</span></li>
+            <li>Объектов природного наследия ЮНЕСКО<span class="intro__span-accent"> 12</span></li>
+            <li>Объектов культурного наследия ЮНЕСКО<span class="intro__span-accent"> 16</span></li>
+            <li>Природных заповедников<span class="intro__span-accent"> 105</span></li>
+            <li>Аэропортов<span class="intro__span-accent"> 241</span></li>
+        </ul>
     </section>
 
     <section class="photo-grid">
@@ -158,27 +160,32 @@
     </section>
 
     <section class="cover">
-        <a href="https://stampsy.com/na-elektrichkakh-do-baikala" target="_blank" rel="noopener" class="cover__overlay">            
-            <h2 class="cover__title">До Байкала «на&nbspсобаках»</h2>
+        <a href="https://stampsy.com/na-elektrichkakh-do-baikala" target="_blank" rel="noopener" class="cover__overlay">
+            <h2 class="cover__title">До Байкала «на&nbsp;собаках»</h2>
             <p class="cover__subtitle">По мотивам учебной темы о Транссибе и iframes — путешествие от столицы до Байкала
                 на электричках.</p>
         </a>
     </section>
 
     <footer class="footer">
-        <ul class="footer__links">
-            <li><a href="https://yandex.ru/maps" target="_blank" rel="noopener" class="footer__link link">Карты</a></li>
-            <li><a href="https://yandex.ru/pogoda" target="_blank" rel="noopener" class="footer__link link">Погода</a>
-            </li>
-            <li><a href="https://rasp.yandex.ru" target="_blank" rel="noopener" class="footer__link link">Расписание</a>
-            </li>
-            <li><a href="https://calendar.yandex.ru" target="_blank" rel="noopener"
-                    class="footer__link link">Календарь</a>
-            </li>
-            <li><a href="https://travel.yandex.ru" target="_blank" rel="noopener"
-                    class="footer__link link">Путешествия</a>
-            </li>
-        </ul>
+        <nav class="footer__navigation">
+            <ul class="footer__links">
+                <li class="footer__links-point"><a href="https://yandex.ru/maps" target="_blank" rel="noopener"
+                        class="footer__link link">Карты</a></li>
+                <li class="footer__links-point"><a href="https://yandex.ru/pogoda" target="_blank" rel="noopener"
+                        class="footer__link link">Погода</a>
+                </li>
+                <li class="footer__links-point"><a href="https://rasp.yandex.ru" target="_blank" rel="noopener"
+                        class="footer__link link">Расписание</a>
+                </li>
+                <li class="footer__links-point"><a href="https://calendar.yandex.ru" target="_blank" rel="noopener"
+                        class="footer__link link">Календарь</a>
+                </li>
+                <li class="footer__links-point"><a href="https://travel.yandex.ru" target="_blank" rel="noopener"
+                        class="footer__link link">Путешествия</a>
+                </li>
+            </ul>
+        </nav>
         <p class="footer__copyright">&copy; 2020. Юля Маркова</p>
     </footer>
 

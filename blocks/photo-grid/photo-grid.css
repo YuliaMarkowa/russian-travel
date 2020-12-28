@@ -26,12 +26,12 @@
 @media (max-width: 767px) {
     .photo-grid {     
         padding: 0 16px 64px;
-        grid-template-columns: 1fr;         
+        grid-template-columns: 1fr;      
     }
 }
 
 @media (max-width: 320px) {
     .photo-grid {     
-        grid-template-columns: minmax(100px, 1fr);  
+        grid-template-columns: minmax(100px, 1fr);
     }
 }
