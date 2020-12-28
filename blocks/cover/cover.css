@@ -5,8 +5,7 @@
     justify-content: center;
     margin: 0 auto;
     max-width: 1184px;
-    min-height: 740px;
-    position: relative;
+    min-height: 740px;     
     background-image: url(../../../images/cover-trains.jpg);
     background-position: center;
     background-size: cover;
